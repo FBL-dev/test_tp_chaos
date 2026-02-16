@@ -8,7 +8,7 @@ app.get("/health", (req, res) => {
 app.get("/add", (req, res) => { 
   const a = parseInt(req.query.a); 
   const b = parseInt(req.query.b); 
-  res.json({ result: a + b }); 
+  res.json({ result: a - b }); 
 }); 
  
 module.exports = app; 
